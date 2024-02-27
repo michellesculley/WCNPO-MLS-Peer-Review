@@ -1,0 +1,54 @@
+title: WNCPO MLS Peer Review
+description: A repository containing the 2023 WCNPO MLS stock assessment and supporting information for the WCNPO MLS Peer Review.
+
+remote_theme: 18F/uswds-jekyll@v4.2.0
+
+plugins:
+    - jekyll-remote-theme
+
+# GitHub information
+# This is used for adding an edit this page link to the footer
+#github:
+#  organization: WCNPO MLS Peer Review
+#  repository: https://github.com/michellesculley/WCNPO-MLS-Peer-Review
+#  default_branch: main
+
+# Configuration for setting the site width to 100%
+# To enable, uncomment the following line
+# site_width: wide
+
+# Configuration for Google Analytics, add your UA code here:
+# google_analytics_ua: UA-????????-??
+
+# Configuration for DAP, add your agency ID here:
+# dap_agency: GSA
+
+# Uncomment to enable AnchorJS functionality on docs layout.
+# See https://github.com/bryanbraun/anchorjs for more information.
+# anchor_js_targets: [h1, h2, h3, h4, h5, h6]
+
+# To enable search, uncomment the search section
+# You will need to setup a search account with search.gov
+# https://search.usa.gov/signup
+# Your search_site_handle value is from the search.gov settings page.
+
+# search_site_handle: searchgov-site-handle
+
+# Configuration for projects and team collections
+# See https://jekyllrb.com/docs/collections/ for more information about collections.
+collections:
+  Assessment_Documents:
+    output: true
+  Base-Case_Model:
+    output: true
+  Supporting_Documents:
+    output: true
+
+collections_dir: WCNPOMLS-collections
+
+styles:
+  - /assets/main.css
+
+
+
+markdown: kramdown
