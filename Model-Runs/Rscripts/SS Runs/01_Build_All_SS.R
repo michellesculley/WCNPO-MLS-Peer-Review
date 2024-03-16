@@ -48,6 +48,7 @@
 #' @param do_jitter TRUE to run jitter analysis (see r4ss::jitter() for specific details of how jitter analyses are run)
 #' @param Njitter number of jitters to run
 #' @param jitterFraction increment of change for each jitter run
+#' @param run_ASPM TRUE to run ASPM analysis
 #' @param printreport default TRUE, produces summary diagnostics report
 #' @param r4ssplots default is FALSE, will produce full r4ss output plots
 #' @param readGoogle default is TRUE, pulls in ctl parameter and input files from Google Drive. If false, will use them from Data folder on local computer
@@ -111,6 +112,7 @@ Build_All_SS <- function(model.info=model.info,
                          do_jitter = TRUE,
                          Njitter = 200,
                          jitterFraction = 0.1,
+                         do_ASPM = TRUE,
                          printreport = TRUE,
                          r4ssplots = TRUE,
                          readGoogle = TRUE,
@@ -427,6 +429,7 @@ Build_All_SS <- function(model.info=model.info,
             Njitter = Njitter,
             jitterFraction = jitterFraction,
             run_parallel=run_parallel,
+            do_ASPM = do_ASPM,
             exe=exe
               )
    
