@@ -9,7 +9,7 @@ During the peer review meeting the [Presentations google drive](https://drive.go
 
 The 2023 WCNPO MLS base-case model can be found in the [Base-Case Model folder](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Base-Case_Model). This model will run in about 20 minutes if you use the ss-basecase.par file for starting values. Please do not make any changes to the files in this folder.
 
-You can also find the [Agenda](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/blob/main/Agenda.docx) and a [draft schedule](https://docs.google.com/document/d/19wTXJ2JxXBolMv82FS5iCsV8jBrGUNtYEF10-A4kENo/edit?usp=drive_link) for the meeting.
+You can also find the [Agenda](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/blob/main/Agenda.docx), a [tenative schedule](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/blob/main/WCNPO%20MLS%20Peer%20Review%20Schedule.pdf) for the meeting, and a copy of the [Terms of Reference](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/blob/main/WCNPOMLS_ReviewTOR.pdf).
 
 ## Running alternative models
 To run additional model runs, you can use the R code found in the [Model-Runs folder](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Model-Runs). Here is the workflow to use this process:
