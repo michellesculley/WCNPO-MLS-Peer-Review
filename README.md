@@ -1,6 +1,6 @@
-#Welcome to the github for the WCNPO MLS Peer Review!
+# Welcome to the github for the WCNPO MLS Peer Review!
 
-##Finding Information:
+## Finding Information:
 You will find the 2023 Stock Assessment Report and supporting documents on catch, size and CPUE data under the [Assessment Documents](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Assessment_Documents) folder.
 
 Additional supporting information may be found in the [Supporting documents](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Supporting_Documents) folder, these include previous assessment reports and background on the biology of WCNPO MLS.
@@ -9,6 +9,7 @@ During the peer review meeting the [Presentations google drive](https://drive.go
 
 The 2023 WCNPO MLS base-case model can be found in the [Base-Case Model folder](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Base-Case_Model). This model will run in about 20 minutes if you use the ss-basecase.par file for starting values. Please do not make any changes to the files in this folder.
 
+## Running alternative models
 To run additional model runs, you can use the R code found in the [Model-Runs folder](https://github.com/michellesculley/WCNPO-MLS-Peer-Review/tree/main/Model-Runs). Here is the workflow to use this process:
 
  + Open the Run_SS_Model.R document, and change the base.dir directory to relfect your local directory.
