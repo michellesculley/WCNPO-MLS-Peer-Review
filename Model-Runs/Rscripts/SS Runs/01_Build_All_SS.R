@@ -184,9 +184,9 @@ Build_All_SS <- function(model.info=model.info,
       ctl.inputs <- read_sheet("1j_WdVNls0xusIV2DDVnQXJnyLI8ybKlFnrKmG1_G7A8", sheet=model.info$scenario)
   
   }else{
-    ctl.inputs <- readxl::read_excel(file.path(root_dir, "Data", "CTL_inputs.xlsx"), sheet=scenario)
+    ctl.inputs <- readxl::read_excel(file.path(root_dir, "Data", "CTL_inputs.xlsx"), sheet=model.info$scenario)
     ctl.params <- readxl::read_excel(file.path(root_dir, "Data", "CTL_parameters.xlsx"), 
-                       sheet=species)
+                       sheet=species)[,c(1:18)]
   }
 
   
