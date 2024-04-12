@@ -148,17 +148,17 @@ Build_All_SS <- function(model.info=model.info,
  
   root_dir=model.info$base.dir
   if(model.info$Nsexes==1){
-    template_dir=file.path(model.info$template_dir,"one sex")
+    template_dir=file.path(model.info$template_dir,"one-sex")
   } else {
-    template_dir=file.path(model.info$template_dir,"two sex")
+    template_dir=file.path(model.info$template_dir,"two-sex")
     }
  
  if(species_folder==TRUE){
-   file_dir = paste(species,"SS3 Runs", model.info$scenario, sep="/") 
-   out_dir=paste(root_dir,species,"SS3 Runs",model.info$scenario,sep="/")
+   file_dir = paste(species,"SS3-Runs", model.info$scenario, sep="/") 
+   out_dir=paste(root_dir,species,"SS3-Runs",model.info$scenario,sep="/")
  } else {
-  file_dir = paste("SS3 Runs",model.info$scenario,sep="/")
-  out_dir=paste(root_dir,"SS3 Runs",model.info$scenario,sep="/")
+  file_dir = paste("SS3-Runs",model.info$scenario,sep="/")
+  out_dir=paste(root_dir,"SS3-Runs",model.info$scenario,sep="/")
  }
   if(write_files){
     
