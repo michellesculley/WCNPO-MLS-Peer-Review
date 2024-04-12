@@ -399,7 +399,7 @@ Build_All_SS <- function(model.info=model.info,
    
    if(runmodels){
   #   ### Run Stock Synthesis ####
-     file.copy(file.path(template_dir, paste0(exe,".exe")), 
+     file.copy(file.path(template_dir, exe), 
                model_dir)
      r4ss::run(dir = model_dir, 
                    exe = exe, extras = ext_args,  skipfinished = FALSE, show_in_console = TRUE)

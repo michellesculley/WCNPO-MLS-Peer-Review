@@ -137,5 +137,5 @@ Build_All_SS(model.info=model.info,
              r4ssplots = FALSE,
              readGoogle = FALSE,
              run_parallel=TRUE,
-             exe="ss_opt_linux"  ## note, for linux (codespaces) use the ss_opt_linux.exe, for mac use the ss_opt_osx.exe, for windows use ss.exe
+             exe="ss_opt_linux"  ## note, for linux (codespaces) use ss_opt_linux, for mac use ss_opt_osx, for windows use ss.exe
 )
