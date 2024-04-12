@@ -59,6 +59,8 @@
 	  // Use 'postCreateCommand' to run commands after the container is created.
 	  "postCreateCommand": "Rscript .devcontainer/install.r",
 	  "postAttachCommand": "sudo rstudio-server start",
+	  "postCreateCommand": "sudo chmod a+x Model-Runs/Template_files/'one sex'/ss_opt_linux",
+	  "postCreateCommand": "sudo chmod a+x Model-Runs/Template_files/'two sex'/ss_opt_linux",
 	  "remoteUser": "rstudio"
 	
 }
