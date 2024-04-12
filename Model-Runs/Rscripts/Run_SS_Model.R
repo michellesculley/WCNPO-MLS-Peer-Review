@@ -14,10 +14,12 @@ library(tidyr)
 library(dplyr)
 library(tibble)
 library(stringr)
-## base working directory where all files are stored
+## base working directory where all files are stored if working on a local directory
 
 base.dir<-"C:/Users/Michelle.Sculley/Documents/WCNPO-MLS-Peer-Review/Model-Runs"
 
+## if working on codespaces:
+base.dir<-c("./Model-Runs")
 
 fleetnames<-c("F01_JPNLL_Q1A1_Late",
               "F02_JPNLL_Q1A2",
@@ -106,7 +108,7 @@ Build_All_SS(model.info=model.info,
              superyear = FALSE,
              superyear_blocks = NULL,
              N_samp = 40,
-             init_values = 1, 
+             init_values = 0, 
              parmtrace = 0,
              last_est_phs = 10,
              benchmarks = 1,
@@ -120,7 +122,7 @@ Build_All_SS(model.info=model.info,
              Fixed_forecatch=1,
              ControlRule = 0,
              write_files = TRUE,
-             runmodels =FALSE,
+             runmodels =TRUE,
              ext_args = "",  ## -nohess to run without hessian
              do_retro = FALSE,
              retro_years = 0:-5,
@@ -131,9 +133,9 @@ Build_All_SS(model.info=model.info,
              Njitter = 10,
              jitterFraction = 0.1,
              do_ASPM = FALSE,
-             printreport = TRUE,
+             printreport = FALSE,
              r4ssplots = FALSE,
-             readGoogle = TRUE,
+             readGoogle = FALSE,
              run_parallel=TRUE,
-             exe="ss"
+             exe="ss_opt_linux"  ## note, for linux (codespaces) use the ss_opt_linux.exe, for mac use the ss_opt_osx.exe, for windows use ss.exe
 )

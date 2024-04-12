@@ -402,7 +402,7 @@ Build_All_SS <- function(model.info=model.info,
      file.copy(file.path(template_dir, paste0(exe,".exe")), 
                model_dir)
      r4ss::run(dir = model_dir, 
-                   exe = "ss", extras = ext_args,  skipfinished = FALSE, show_in_console = TRUE)
+                   exe = exe, extras = ext_args,  skipfinished = FALSE, show_in_console = TRUE)
    }
 
   # 
